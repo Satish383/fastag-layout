@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wallteHistory</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-logo">
+        <img src="/icon/user-male.svg" alt="" />
+      </div>
+      <a class="active" href="/dashboard.html"
+        ><img class="dashboard-icon" src="/icon/home.png" alt="" />Home</a
+      >
+      <a href="/rechartHistory.html"
+        ><img class="dashboard-icon" src="/icon/history.png" alt="" />Recharge
+        History</a
+      >
+      <a href="/walletHistory.html"
+        ><img class="dashboard-icon" src="/icon/wallet.png" alt="" />Wallet
+        History</a
+      >
+      <a href="/offer.html"
+        ><img class="dashboard-icon" src="/icon/giftbox.png" alt="" />Offers</a
+      >
+      <a class="btn-open-help-modal" href="#"
+        ><img class="dashboard-icon" src="/icon/call-center.png" alt="" />Help
+        and Support</a
+      >
+      <a href="#"
+        ><img class="dashboard-icon" src="/icon/arrow.png" alt="" />Logout</a
+      >
+    </div>
+
+    <div class="dasboard-container">
+      <header class="dashboard-header">
+        <div class="dashboard-logo">
+          <img src="/icon/ft_icon.svg" alt="" />
+        </div>
+        <div class="dashboard-text">
+          FASTag Recharge & Get Exciting Offers on Every Recharge!
+        </div>
+        <div class="dashboard-element">
+          <div class="dashboard-wallet">
+            <img src="/icon/wallet.png" alt="" />
+            <span>₹0.00</span>
+            <a href="">Add Money</a>
+          </div>
+          <div class="dashboard-user">
+            <a href=""><img src="/icon/user-male.svg" alt="" /></a>
+          </div>
+        </div>
+      </header>
+
+      <div class="recharge-container">
+        <div class="recharge-logo">
+          <div class="logo-left">
+            <img src="/icon/history.png" alt="History Recharge" />
+            <span>Recharge History</span>
+          </div>
+          <img
+            class="logo-right"
+            src="/image/bbps-img.png"
+            alt="Bharat Connect Logo"
+          />
+        </div>
+
+        <form action="">
+          <div class="form-group">
+            <div class="filter-recharge-from">
+              <label for="fromDate">From Date</label>
+              <input type="date" placeholder="Select From Date" />
+            </div>
+            <div class="filter-recharge-end">
+              <label for="endDate">To Date</label>
+              <input type="date" placeholder="Select to Date" />
+            </div>
+            <button class="recharge-search">
+              <img src="/icon/search.png" alt="" />
+              <span>Search</span>
+            </button>
+          </div>
+        </form>
+
+        <table class="recharge-table">
+          <thead>
+            <tr>
+              <th>Sr.No</th>
+              <th>Service</th>
+              <th>Transaction ID</th>
+              <th>Amount</th>
+              <th>CreatedDtTm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: center" colspan="8" class="no-records">
+                No records found
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="helpModal" class="help-modal">
+      <div class="help-modal-content">
+        <span class="help-modal-close">x</span>
+        <h2>Help and Support</h2>
+        <div>Email: ops@logiclead.in</div>
+        <br />
+        <div>Email: tech@logiclead.in</div>
+        <br />
+        <div>Mobile: XXXXXXXXXXX</div>
+      </div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
